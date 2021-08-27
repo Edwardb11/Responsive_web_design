@@ -16,11 +16,18 @@
     
   }
   #ball1 {
+    background: blue;
     left:27%;
     animation-timing-function:linear;
+    /* animation-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75); */
+    /* Una curva de Bézier cúbica está definida por cuatro puntos P0, P1, P2 y P3. P0 y P3 son el inicio y el final de la curva y,
+     en CSS, estos puntos son fijos ya que las coordenadas son proporciones. 
+    P0 es (0, 0) y representa el tiempo inicial y el estado inicial, P3 es (1, 1) y representa el tiempo final y el estado final. 
+    animation-timing-function: cubic-bezier(x1, y1, x2, y2).*/
 
   }
   #ball2 {
+    background: red;
     left:56%;
     animation-timing-function:ease-out;
 

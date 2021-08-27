@@ -1,0 +1,53 @@
+#direccion35 {
+    border-radius: 20px;
+    width: 70%;
+    height: 400px;
+    margin: 50px auto;
+    background-image: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+
+  }
+  #direccion90 {
+   border-radius: 20px;
+  width: 70%;
+  height: 400px;
+  margin: 50px auto;
+  background: linear-gradient(90deg, red, yellow, rgb(204, 204, 255));
+          /* El primer argumento especifica la dirección desde la que comienza la transición
+      de color; se puede expresar como un grado, donde 90deghace un degradado horizontal
+          (de izquierda a derecha) y 45deghace un degradado diagonal (de abajo a la izquierda
+          a arriba a la derecha). Los siguientes argumentos especifican el orden de los 
+          colores utilizados en el degradado. */
+      }
+
+
+  #repeating-linear-gradient{
+      border-radius: 20px;
+      width: 70%;
+      height: 400px;
+      margin:  50 auto;
+      
+      /* La función CSS crea una imagen que consta de gradientes lineales repetidos.
+       Es similar y toma los mismos argumentos, pero repite las paradas de color 
+       infinitamente en todas las direcciones para cubrir todo su contenedor. */
+      background: repeating-linear-gradient(
+      90deg,
+      yellow 0px,
+      blue 40px,
+      green 40px,
+      red 80px    
+      );
+
+   }
+   #repeating-linear-gradient2{
+      border-radius: 20px;
+      width: 70%;
+      height: 400px;
+      margin:  50 auto;
+      background: repeating-linear-gradient(
+      45deg,
+      yellow 40px,
+      black 40px,
+      yellow 0px,
+      black 80px
+      );
+  }

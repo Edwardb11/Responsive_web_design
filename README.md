@@ -1,2 +1,3 @@
-# Responsive_web_design
-El diseño web responsive o adaptativo es una técnica de diseño web que busca la correcta visualización de una misma página en distintos dispositivos.
+# Diseño web adaptable
+_El diseño web receptivo es un enfoque del diseño web que hace que las páginas web se muestren bien en una variedad de dispositivos y tamaños de pantalla o ventana desde el tamaño mínimo al máximo. El trabajo reciente también considera la proximidad del espectador como parte del contexto de visualización como una extensión de RWD._
+<img alt="JavaScript"  src="https://blogdemedios.com.ar/download/multimedia.normal.8e966ea27bc6c051.646973656e6f2d726573706f6e736976655f6e6f726d616c2e676966.gif" />

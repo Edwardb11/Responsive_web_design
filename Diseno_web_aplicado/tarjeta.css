@@ -29,3 +29,12 @@ h4 {
   #thumbnail{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   }
+
+
+/* Un valor de 1 es opaco, que no es transparente en absoluto.
+Un valor de 0,5 es medio transparente.
+Un valor de 0 es completamente transparente. */
+/* Establezca el valor opacity de las etiquetas de anclaje en 0.7 usando la linksclase para seleccionarlas. */
+.links{
+  opacity:0.7;
+}

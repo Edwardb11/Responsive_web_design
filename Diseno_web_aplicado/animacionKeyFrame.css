@@ -42,7 +42,7 @@ animation-duration:4s;
     }
 
 }
-
+/* Boton */
 
 button {
     border-radius: 5px;
@@ -54,6 +54,7 @@ button {
 button:hover {
     animation-name: background-color;
     animation-duration: 500ms;
+    animation-fill-mode: forwards;  /* para que se quede ese estilo cuando pase la animacion */
 
 }
 @keyframes background-color{

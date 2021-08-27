@@ -35,3 +35,6 @@
     }
   }
 
+  /* Hay una serie de palabras clave predefinidas disponibles para opciones populares. Por ejemplo, el valor predeterminado es ease, que comienza lento, se
+   acelera en el medio y luego vuelve a disminuir al final. Otras opciones incluyen ease-out, que es rápido al principio y luego 
+  se ralentiza ease-in, que es lento al principio y luego se acelera al final, o linearque aplica una velocidad de animación constante en todo momento. */

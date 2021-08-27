@@ -1,0 +1,28 @@
+div {
+    width: 70%;
+    height: 100px;
+    margin:  50px auto;
+    background: linear-gradient(
+      53deg,
+      #ccfffc,
+      #ffcccf
+    );
+  }
+
+/* para trasnformar al pasar por encima         */
+  div:hover { 
+  transform: scale(1.1);
+  }
+  /* La siguiente función de la transformpropiedad es skewX(), que sesga el elemento seleccionado a lo largo de su eje X (horizontal) en un grado dado. */
+  #bottom {
+  background-color: blue;
+  transform: skewX(24deg);
+   }
+
+   /* Dado que la skewX()función sesga el elemento seleccionado a lo largo del eje X en un grado dado, no es de extrañar que la skewY()propiedad sesgue
+    un elemento a lo largo del eje Y (vertical). */
+    #top {
+      background-color: red;
+     margin-top: 10%;
+       transform: skewY(-10deg);
+  }

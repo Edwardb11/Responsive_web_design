@@ -1,0 +1,44 @@
+/* 
+Para animar un elemento, necesita conocer las propiedades de la animación y la @keyframesregla. Las propiedades de la animación controlan
+ cómo debe comportarse la animación y la @keyframesregla controla lo que sucede durante esa animación. Hay ocho propiedades de animación en
+  total. Este desafío lo mantendrá simple y cubrirá los dos más importantes primero:
+
+animation-nameestablece el nombre de la animación, que luego se usa @keyframespara decirle a CSS qué reglas van con qué animaciones.
+
+animation-duration establece la duración de la animación.
+
+@keyframeses cómo especificar exactamente qué sucede dentro de la animación durante la duración. Esto se hace dando propiedades CSS para 
+"cuadros" específicos durante la animación, con porcentajes que van del 0% al 100%. Si compara esto con una película, las propiedades CSS
+ para 0% es cómo se muestra el elemento en la escena de apertura. Las propiedades de CSS para el 100% es cómo aparece el elemento al final, 
+ justo antes de que aparezcan los créditos. Luego, CSS aplica la magia para hacer la transición del elemento durante la duración dada para
+  representar la escena.  */
+
+/* Cree una animación para el elemento con la identificación rect, estableciendo el animation-namea rainbowy el animation-durationen 4 segundos. 
+A continuación, declare una @keyframesregla y establezca el background-coloral principio de la animación ( 0%) en azul, la mitad de la animación
+ ( 50%) en verde y el final de la animación ( 100%) en amarillo. */
+
+ div {
+height: 40px;
+width: 70%;
+background: black;
+margin: 50px auto;
+border-radius: 5px;
+}
+
+#rect {
+animation-name:rainbow;
+animation-duration:4s;
+    }
+
+@keyframes rainbow{
+    0%{
+        background-color:blue;
+    }
+    50%{
+        background-color:green;
+    }
+    100%{
+        background-color:yellow;
+    }
+
+}

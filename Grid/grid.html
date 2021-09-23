@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d1{background:LightSkyBlue;}
+        .d2{background:LightSalmon;}
+        .d3{background:PaleTurquoise;}
+        .d4{background:LightPink;}
+        .d5{background:PaleGreen;}
+      
+        .container {
+          font-size: 40px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          /* grid-template-columns: 100px 100px 100px; */
+          grid-template-rows:50px 50px;
+ /* Para agregar algunas columnas a la cuadrícula, use la grid-template-columns 
+ para filas grid-template-rows  */
+ /* Puede usar unidades absolutas y relativas como pxy emen CSS Grid para definir el tamaño de filas y columnas. También puede usar estos:
+fr: establece la columna o fila en una fracción del espacio disponible,
+auto: establece la columna o fila en el ancho o alto de su contenido automáticamente,
+%: ajusta la columna o fila al porcentaje de ancho de su contenedor. */
+/* grid-template-columns: auto 50px 10% 2fr 1fr; */
+
+        grid-template-columns: 1fr 100px 2fr;
+        /* . A veces quieres un espacio entre las columnas. Para agregar un espacio
+          entre las columnas, use la grid-column-gappropiedad de esta manera:  grid-column-gap: 10px; */
+          /* grid-column-gap: 20px;    y grid-row-gap para las filas  grid-row-gap:5px;
+*/
+
+
+
+
+}
+      </style>
+</head>
+<body> 
+      <div class="container">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+      </div>
+</body>
+</html>

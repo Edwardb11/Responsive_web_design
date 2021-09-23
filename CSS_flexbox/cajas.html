@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    #box-container {
+      display: flex;
+      height: 500px;
+      align-items:center;
+    /* flex-direction:row-reverse;  */
+    /*Invertir direcciones  */
+    /* flex-direction:column;  colunmas*/
+    /* flex-direction:row; filas */
+    /* justify-content:center; /*justificar los espacios */
+
+    }   
+    #box-1 {
+    background-color: dodgerblue;
+    width: 100%;
+    height: 200px;
+    flex-shrink:1;
+    /* 
+    La flex-shrinkpropiedad toma números como valores. Cuanto mayor
+     sea el número, más se encogerá en comparación con los otros 
+     elementos del contenedor. Por ejemplo, si un elemento tiene un 
+     flex-shrinkvalor de 1y el otro tiene un flex-shrinkvalor de 3, 
+     el que tiene el valor de 3se reducirá tres veces más que el otro.
+    */
+
+    /* flex-grow:1; */
+
+    /* Lo contrario de flex-shrinkes la flex-grow propiedad. Recuerde
+     que flex-shrinkcontrola el tamaño de los artículos cuando el 
+     contenedor se encoge. La flex-growpropiedad controla el tamaño 
+    de los elementos cuando se expande el contenedor principal. */
+
+    /* flex-basis:20em; */
+
+    /* La flex-basis propiedad especifica el tamaño inicial del
+     elemento antes de que CSS realice ajustes con flex-shrinko
+      flex-grow. */
+
+    /* Las unidades usadas por la flex-basispropiedad son los mismos 
+    que otras propiedades de tamaño ( px, em, %, etc.). El valor auto clasifica 
+    los elementos en función del contenido. */
+      
+    /* flex:1 1 150px; */
+    /* Hay un atajo disponible para establecer varias propiedades 
+    flexibles a la vez. El flex-grow, flex-shrinky flex-basislas propiedades se 
+    pueden ajustar entre sí mediante el uso de la flex propiedad. */
+  
+    order: 2;
+    /* La orderpropiedad se usa para decirle a CSS el orden en 
+    que aparecen los elementos flexibles en el contenedor flexible.
+     De forma predeterminada, los elementos aparecerán en el mismo 
+     orden en que vienen en el HTML de origen. La propiedad toma números
+     como valores y se pueden usar números negativos. */
+     align-self:center;
+/* La propiedad final de los elementos flexibles es align-self.
+ Esta propiedad le permite ajustar la alineación de cada elemento
+  individualmente, en lugar de configurarlos todos a la vez. 
+  Esto es útil ya que otras técnicas de ajuste común el uso de las
+ propiedades CSS float, cleary 
+vertical-alignno hacer el trabajo sobre los puntos de flexión. */
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 100%;
+    height: 200px;
+    flex-shrink:2;
+    order:1;
+    align-self:flex-end;
+  }
+       
+
+</style>
+
+<div id="box-container">
+  <div id="box-1"><p></p></div>
+  <div id="box-2"><p></p></div>
+</div>
+</body>
+</html>

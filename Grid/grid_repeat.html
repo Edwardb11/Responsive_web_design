@@ -18,13 +18,21 @@
           width: 100%;
           background: LightGray;
           display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+          /* grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); */
           /* La función de repetición viene con una opción llamada 
           utocompletar . Esto le permite insertar automáticamente 
           tantas filas o columnas del tamaño deseado como
            sea posible, dependiendo del tamaño del contenedor.
             Puede crear diseños flexibles cuando se combina auto-fillcon minmax */
-          grid-template-rows: 1fr 1fr 1fr;
+         
+            grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+/* auto-fitfunciona casi de forma idéntica a auto-fill. La única 
+diferencia es que cuando el tamaño del contenedor excede el tamaño
+ de todos los elementos combinados, auto-fillsigue insertando filas
+  o columnas vacías y empuja sus elementos hacia un lado, mientras
+   que auto-fitcontrae esas filas o columnas vacías y estira
+ sus elementos para que se ajusten al tamaño del contenedor.  */
+         grid-template-rows: 1fr 1fr 1fr;
           grid-gap: 10px;
         }
       
